@@ -6,6 +6,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+
+  position: relative;
+
+}
+
 .container {
   width: 90%;
   max-width: 1024px;
@@ -358,20 +364,115 @@ header {
   text-align: center;
 }
 
-.contact__title .h2 {
+.contact__title h2 {
   font-size: 50px;
   font-weight: 400;
   color: #000;
+  padding: 70px 0 20px 0;
 }
 
 .contact__title p {
   font-weight: 800;
   color: #888888;
+  padding: 10px 200px;
 }
 
 .contact__content {
-  width: 70%;
+
   margin: 30px auto 0;
   display: flex;
   align-items: center;
+}
+
+.contact__maps {
+  width: 60%;
+}
+
+.contact__maps iframe {
+  width: 100%;
+
+}
+
+.contact__form form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 400px;
+  font-size: 15px;
+  padding: 1em;
+  border: 1px solid #888888;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.contact__form button {
+  margin-top: -20px;
+  background-color: #000;
+  color: #ffffff;
+  padding: 18px 0;
+  font-size: 16px;
+  border: none;
+  transition: all .5s;
+}
+
+.contact__form:hover button {
+  background-color: #e62b4a;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #000;
+  color: #ffffff;
+}
+
+.footer__content {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.footer__icons a {
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 54px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all .5s;
+}
+
+.footer__icons a:hover {
+  background-color: #e62b4a;
+}
+
+.back-to-top {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 4px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
 }
